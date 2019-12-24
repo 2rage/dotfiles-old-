@@ -75,7 +75,7 @@ ohmyzshInstall () {
     else
     echo "oh-my-zsh not found, now installing oh-my-zsh..."
     echo ''
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     success 'oh-my-zsh installed'
     fi
 }
@@ -109,6 +109,15 @@ pl9kInstall () {
     fi
 }
 
+pl10kInstall () {
+    # powerlevel10k install
+    if [ -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
+        info 'powerlevel10k already installed'
+    else
+        echo "Now installing powerlevel10k..."
+        git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k && success 'powerlevel10k installed'
+    fi
+}
 
 tmuxTpmInstall () {
     # tmux tpm install
@@ -173,6 +182,7 @@ configureGitCompletion
 ohmyzshInstall
 ohmyzshPluginInstall
 pl9kInstall
+pl10kInstall
 tmuxTpmInstall
 
 #vim setup
@@ -212,6 +222,5 @@ else
 	echo ''
 	echo "source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc && echo "added zsh-syntax-highlighting to .zshrc..."
 	echo ''
-	echo "source $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc && echo "added zsh-autosuggestions to .zshrc..."
-	
+	echo "source $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc && echo "added zsh-autosuggestions to .zshrc..."	
 fi
