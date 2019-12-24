@@ -173,7 +173,6 @@ configureGitCompletion
 ohmyzshInstall
 ohmyzshPluginInstall
 pl9kInstall
-#pl10kInstall
 tmuxTpmInstall
 
 #vim setup
