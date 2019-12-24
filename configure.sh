@@ -109,15 +109,6 @@ pl9kInstall () {
     fi
 }
 
-pl10kInstall () {
-    # powerlevel10k install
-    if [ -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
-        info 'powerlevel10k already installed'
-    else
-        echo "Now installing powerlevel10k..."
-        git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k && success 'powerlevel10k installed'
-    fi
-}
 
 tmuxTpmInstall () {
     # tmux tpm install
@@ -126,17 +117,6 @@ tmuxTpmInstall () {
     else
         echo "Now installing Tmux TPM manager..."
         git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm && success 'tmux tpm manager installed'
-    fi
-}
-
-fubectlInstall () {
-    # fubectl install
-    # todo - move to after ~/bin check on bootstrap
-    if [ -f "$HOME/bin/fubectl.source" ]; then
-        info 'fubectl.source already exists'
-    else
-        echo "Now installing fubectl..."
-        curl -o "$HOME/bin/fubectl.source" -LO https://rawgit.com/kubermatic/fubectl/master/fubectl.source && success "fubectl placed in $HOME/bin"
     fi
 }
 
@@ -193,9 +173,8 @@ configureGitCompletion
 ohmyzshInstall
 ohmyzshPluginInstall
 pl9kInstall
-pl10kInstall
+#pl10kInstall
 tmuxTpmInstall
-fubectlInstall
 
 #vim setup
 vundleInstall
