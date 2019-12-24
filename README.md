@@ -3,6 +3,8 @@
 ### macOS Configuration
 Run the following to configure macOS from scratch...
 ```
+git clone https://github.com/2rage/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/2rage/dotfiles/master/configure.sh)"
 ```
 
