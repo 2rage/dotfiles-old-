@@ -19,7 +19,7 @@ I was a little tired of having long alias files and everything strewn about
 (which is extremely common on other dotfiles projects, too). That led to this
 project being much more topic-centric. I realized I could split a lot of things
 up into the main areas I used (git, system libraries, and so on), so I
-structured the project accordingly. I also created branches for WSL and MacOS since those are my two environments.
+structured the project accordingly.
 
 If you're interested in the philosophy behind why projects like these are
 awesome, you might want to [read Holman's post on the
@@ -60,14 +60,13 @@ There's a few special files in the hierarchy.
   symlinked in when you run `script/bootstrap`.
 
 ## install
-There are two "master" branches here: WSL and MacOS; there are two "dev" branches here wsl-dev and mac-dev.
 
 Run this:
 
 ```sh
 git clone https://github.com/2rage/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-script/bootstrap
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/2rage/dotfiles/master/configure.sh)"
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
