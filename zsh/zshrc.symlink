@@ -146,32 +146,12 @@ ZSH_HIGHLIGHT_STYLES[path_approx]=fg=cyan
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red') # To have commands starting with `rm -rf` in red:
 
 #---- Export ----
-export PATH=$PATH:/Users/jessicadeen/bin
+export PATH=$PATH:/Users/2rage/bin
 export GOPATH=~/go 
 export PATH=$GOPATH/bin:$PATH
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:/usr/local/bin/node
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export MONGO_PATH=/usr/local/mongodb 
-export PATH=$PATH:$MONGO_PATH/bin
-export PATH="/usr/local/bin/jdk8u212-b04/Contents/Home/bin:$PATH"
-export M2_HOME=/usr/local/Cellar/maven/3.6.1/libexec/
 
 #---- End Export ----
-
-#---- Source ----
-[ -f ~/bin/fubectl.source ] && source ~/bin/fubectl.source
-source <(kubectl completion zsh)
-source $(dirname $(gem which colorls))/tab_complete.sh
-#---- End Source ----
-#---- END CUSTOM ----
-alias h3=/usr/local/bin/tmp/helm
-alias h3=/usr/local/bin/tmp/helm
-alias h3=/usr/local/bin/tmp/helm
-alias h3=/usr/local/bin/tmp/helm
-alias h3=/usr/local/bin/tmp/helm
-alias h3=/usr/local/bin/tmp/helm
-alias h3=/usr/local/bin/tmp/helm
-alias h3=/usr/local/bin/tmp/helm
-alias h3=/usr/local/bin/tmp/helm

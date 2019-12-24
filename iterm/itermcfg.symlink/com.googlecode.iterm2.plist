@@ -36892,7 +36892,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/jessicadeen</string>
+			<string>/Users/2rage</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -37530,7 +37530,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/jessicadeen</string>
+			<string>/Users/2rage</string>
 		</dict>
 	</array>
 	<key>NoSyncAllAppVersions</key>
@@ -38275,7 +38275,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/jessicadeen/.itermcfg/</string>
+	<string>/Users/2rage/.itermcfg/</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
