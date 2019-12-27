@@ -12,7 +12,6 @@ brew 'grc'
 brew 'jp2a'
 brew 'jq'
 brew 'libgit2'
-#brew 'maven' need fix
 brew 'openssl'
 brew 'node'
 brew 'postgresql'
