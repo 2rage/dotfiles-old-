@@ -1,9 +1,10 @@
 # 2rage does dotfiles - forked from holman's repo
 
-### macOS Configuration
+### macOS Dev Configuration
 Run the following to configure macOS from scratch...
+Not for production use
 ```
-git clone https://github.com/2rage/dotfiles.git ~/.dotfiles
+git clone https://github.com/2rage/dev/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/2rage/dotfiles/master/configure.sh)"
 ```
